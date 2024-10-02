@@ -145,14 +145,6 @@ public partial class RiskySandBox_BlizardFunctions : MonoBehaviour
         }
 
         return _blizard_candidates;
-
-
-
-
-
-        // ??
-        // //randomly select _n_blizards (from the candidates)
-        // return null;
     }
 
 
@@ -187,6 +179,9 @@ public partial class RiskySandBox_BlizardFunctions : MonoBehaviour
                     return false; // next neighbor cannot be found from current neighbor, so current node splits map
                 }
             }
+
+            if (RiskySandBox_Tile.GET_RiskySandBox_Tile(_tile_ID).has_stable_portal)
+                return false;
             return true;
         }
         else
