@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public partial class RiskySandBox_BlizardFunctions : MonoBehaviour
 {
-
+    public static string credits = "Wouter Lambrecht";
 
     Dictionary<int, List<int>> test_map = new Dictionary<int, List<int>>
         {
