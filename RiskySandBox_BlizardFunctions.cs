@@ -126,7 +126,7 @@ public partial class RiskySandBox_BlizardFunctions : MonoBehaviour
 
 
     /// <summary>
-    /// returns a list of all the tiles that can become blizards
+    /// returns a list of all the tile ids that can become blizards
     /// </summary>
     public static List<int> GET_blizardCandidates(Dictionary<int,List<int>> _graph)
     {
